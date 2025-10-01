@@ -11,6 +11,21 @@
       rel="stylesheet"
     />
     <style>
+      /* ---- ANIMAÇÃO DO BOTÃO WHATSAPP ---- */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        70% {
+          transform: scale(1.1);
+          box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
       /* ---- CONFIGURAÇÕES GLOBAIS E VARIÁVEIS ---- */
       :root {
         --primary-color: #a946f5;
@@ -91,8 +106,8 @@
       }
 
       .coach-bio .coach-image-placeholder img {
-        width: 150px;
-        height: 150px;
+        width: 220px;
+        height: 220px;
       }
       /* --- FIM DOS ESTILOS DE IMAGEM --- */
 
@@ -238,6 +253,7 @@
         gap: 25px;
         max-width: 1200px;
         margin: 0 auto;
+        justify-content: center;
       }
 
       .plan-card {
@@ -353,6 +369,7 @@
         justify-content: center;
         transition: transform 0.3s ease;
         text-decoration: none;
+        animation: pulse 2s infinite;
       }
       .whatsapp-float:hover {
         transform: scale(1.1);
@@ -391,6 +408,7 @@
         }
         .hero-text p {
           font-size: 1.2em;
+          margin: 2rem 0;
         }
 
         .hero .image-placeholder-container img {
@@ -485,18 +503,39 @@
         <div class="coach-bio">
           <div class="coach-image-placeholder">
             <img
-              src="./assets/profile.png"
+              src="./assets/profile2.png"
               alt="Close-up do Professor Rafael Caleb"
             />
           </div>
           <div class="coach-text">
-            <h3>Professor Rafael Caleb</h3>
+            <h3>Personal Trainer Rafael Caleb</h3>
             <p>
-              Sou graduando em Educação Física e especialista em hipertrofia,
-              emagrecimento e performance. Minha metodologia prioriza a criação
-              de rotinas de treino eficientes e sustentáveis, sempre respeitando
-              sua individualidade para alcançar os melhores resultados.
+              Sou graduando em Educação Física e
+              <strong
+                >especialista em hipertrofia, emagrecimento e
+                performance</strong
+              >. Minha metodologia prioriza a criação de rotinas de treino
+              eficientes e sustentáveis, sempre respeitando sua individualidade
+              para alcançar os <strong>melhores resultados</strong>.
             </p>
+            <a
+              href="https://www.instagram.com/caleb_.fit/"
+              target="_blank"
+              class="cta-button secondary-cta"
+              style="
+                max-width: 22rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+              >Conheça meu trabalho no Instagram
+              <img
+                style="border-radius: 8px"
+                width="32px"
+                height="32px"
+                src="./assets/insta.png"
+                alt=""
+            /></a>
           </div>
         </div>
       </section>
