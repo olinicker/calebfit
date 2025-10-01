@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caleb.fit - Transforme seu Corpo com Rafael Caleb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* ---- CONFIGURAÇÕES GLOBAIS E VARIÁVEIS ---- */
+      :root {
+        --primary-color: #a946f5;
+        --primary-darker: #8a2be2;
+        --light-bg: #f9f4ff;
+        --dark-bg: #1a0c29;
+        --text-light: #ffffff;
+        --text-dark: #333;
+        --card-bg: #ffffff;
+        --border-color: #e0c6ff;
+        --shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+        --whatsapp-green: #25d366;
+      }
+
+      /* Reset básico e tipografia */
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--light-bg);
+        color: var(--text-dark);
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* ---- HEADER E HERO SECTION ---- */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          var(--primary-darker) 0%,
+          var(--primary-color) 100%
+        );
+        color: var(--text-light);
+        padding: 20px;
+        padding-bottom: 50px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto 40px auto;
+      }
+
+      .logo {
+        font-weight: 900;
+        font-size: 1.8em;
+        color: var(--text-light);
+      }
+
+      .hero-content {
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .image-placeholder-container {
+        margin-bottom: 30px;
+      }
+
+      /* --- ESTILOS DE IMAGEM PROFISSIONAIS --- */
+      .image-placeholder-container img,
+      .coach-image-placeholder img {
+        border-radius: 50%;
+        object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero .image-placeholder-container img {
+        width: 200px;
+        height: 200px;
+        border: 4px solid var(--text-light);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+      }
+
+      .coach-bio .coach-image-placeholder img {
+        width: 150px;
+        height: 150px;
+      }
+      /* --- FIM DOS ESTILOS DE IMAGEM --- */
+
+      .hero-text h1 {
+        font-size: 2.2em;
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+
+      .hero-text p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.9;
+      }
+
+      /* ---- BOTÕES (CTAs) ---- */
+      .cta-button {
+        display: inline-block;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border: none;
+        box-shadow: var(--shadow);
+      }
+
+      .primary-cta {
+        background-color: var(--text-light);
+        color: var(--primary-darker);
+        font-size: 1.2em;
+        transform: scale(1);
+      }
+
+      .primary-cta:hover {
+        background-color: var(--light-bg);
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-cta {
+        background-color: transparent;
+        border: 2px solid var(--text-light);
+        color: var(--text-light);
+        padding: 8px 20px;
+        box-shadow: none;
+      }
+
+      .nav-cta:hover {
+        background-color: var(--text-light);
+        color: var(--primary-darker);
+      }
+
+      .secondary-cta {
+        background-color: transparent;
+        border: 2px solid var(--primary-color);
+        color: var(--primary-color);
+        box-shadow: none;
+      }
+
+      .secondary-cta:hover {
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        box-shadow: 0 2px 10px rgba(169, 70, 245, 0.4);
+      }
+
+      /* ---- SEÇÕES PADRÃO ---- */
+      .section-container {
+        padding: 50px 20px;
+        text-align: center;
+      }
+
+      .section-container h2 {
+        font-size: 2em;
+        font-weight: 900;
+        color: var(--primary-darker);
+        margin-bottom: 40px;
+      }
+
+      .dark-section {
+        background-color: var(--dark-bg);
+        color: var(--text-light);
+      }
+
+      .dark-section h2 {
+        color: var(--text-light);
+      }
+
+      /* ---- SEÇÃO APRESENTAÇÃO ---- */
+      .coach-bio {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .coach-image-placeholder {
+        margin: 0 auto 20px auto;
+      }
+
+      .coach-text h3 {
+        font-size: 1.5em;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+      }
+
+      /* ---- SEÇÃO SERVIÇOS ---- */
+      .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .service-card {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px solid var(--primary-darker);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(169, 70, 245, 0.2);
+      }
+
+      .service-card h4 {
+        font-size: 1.2em;
+        color: var(--primary-color);
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      /* ---- SEÇÃO PLANOS ---- */
+      .plans-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .plan-card {
+        background-color: var(--card-bg);
+        border: 2px solid var(--border-color);
+        border-radius: 12px;
+        padding: 25px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .plan-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .plan-card.featured {
+        border-color: var(--primary-color);
+        border-width: 3px;
+      }
+
+      .featured-badge {
+        position: absolute;
+        top: 15px;
+        right: -30px;
+        background-color: var(--primary-color);
+        color: var(--text-light);
+        padding: 5px 30px;
+        transform: rotate(45deg);
+        font-size: 0.8em;
+        font-weight: 700;
+      }
+
+      .plan-card h3 {
+        font-size: 1.6em;
+        color: var(--primary-darker);
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      .plan-details p {
+        font-size: 1.1em;
+        border-bottom: 1px solid var(--light-bg);
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .plan-details p:last-child {
+        border-bottom: none;
+      }
+      .plan-details span {
+        color: #555;
+      }
+      .plan-details strong {
+        color: var(--primary-darker);
+      }
+      .plan-details small {
+        font-size: 0.8em;
+        color: #777;
+        margin-left: 5px;
+      }
+
+      .plan-card .cta-button {
+        margin-top: 20px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .disclaimer {
+        font-size: 0.9em;
+        color: #777;
+        margin-top: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* ---- FOOTER ---- */
+      .main-footer {
+        background-color: var(--dark-bg);
+        color: var(--text-light);
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .main-footer .logo {
+        color: var(--primary-color);
+      }
+      .main-footer p {
+        margin: 5px 0 0 0;
+        opacity: 0.7;
+      }
+
+      /* ---- BOTÃO FLUTUANTE WHATSAPP ---- */
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        background-color: var(--whatsapp-green);
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        text-decoration: none;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+      /* ESTILO ATUALIZADO PARA A IMAGEM */
+      .whatsapp-float img {
+        width: 35px;
+        height: 35px;
+      }
+
+      /* ---- MEDIA QUERIES PARA TABLET E DESKTOP ---- */
+
+      /* A partir de 768px (tablets e telas pequenas) */
+      @media (min-width: 768px) {
+        .section-container {
+          padding: 60px 30px;
+        }
+        .section-container h2 {
+          font-size: 2.5em;
+          margin-bottom: 50px;
+        }
+
+        .hero-content {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          text-align: left;
+        }
+
+        .hero-text {
+          flex: 1;
+          margin-right: 40px;
+        }
+        .hero-text h1 {
+          font-size: 2.8em;
+        }
+        .hero-text p {
+          font-size: 1.2em;
+        }
+
+        .hero .image-placeholder-container img {
+          width: 250px;
+          height: 250px;
+        }
+
+        .coach-bio {
+          display: flex;
+          align-items: center;
+          text-align: left;
+          gap: 40px;
+        }
+        .coach-image-placeholder {
+          margin: 0;
+          flex-shrink: 0;
+        }
+        .coach-text {
+          flex: 1;
+        }
+
+        .services-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 30px;
+        }
+
+        .plans-container {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+        .plan-card.featured {
+          transform: scale(1.05);
+        }
+        .plan-card.featured:hover {
+          transform: scale(1.1) translateY(-8px);
+        }
+      }
+
+      /* A partir de 1024px (desktops maiores) */
+      @media (min-width: 1024px) {
+        .section-container {
+          padding: 80px 40px;
+        }
+
+        .hero-text h1 {
+          font-size: 3.2em;
+        }
+        .hero .image-placeholder-container img {
+          width: 300px;
+          height: 300px;
+        }
+
+        .plans-container {
+          gap: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <div class="logo">Caleb.fit</div>
+        <a href="#planos" class="cta-button nav-cta">Ver Planos</a>
+      </nav>
+      <div class="hero-content">
+        <div class="image-placeholder-container">
+          <img
+            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG9tby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Professor Rafael Caleb em um ambiente de academia"
+          />
+        </div>
+        <div class="hero-text">
+          <h1>Sua melhor versão começa com o treino certo.</h1>
+          <p>
+            Aulas presenciais e acompanhamento personalizado com o Professor
+            Rafael Caleb para você atingir seus objetivos de forma definitiva.
+          </p>
+          <!-- LINK DO WHATSAPP ATUALIZADO -->
+          <a
+            href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Gostaria de agendar uma aula experimental."
+            target="_blank"
+            class="cta-button primary-cta"
+            >Agende sua Aula Experimental</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="apresentacao" class="section-container">
+        <h2>Conheça seu Treinador</h2>
+        <div class="coach-bio">
+          <div class="coach-image-placeholder">
+            <img
+              src="./assets/profile.png"
+              alt="Close-up do Professor Rafael Caleb"
+            />
+          </div>
+          <div class="coach-text">
+            <h3>Professor Rafael Caleb</h3>
+            <p>
+              Sou graduando em Educação Física e especialista em hipertrofia,
+              emagrecimento e performance. Minha metodologia prioriza a criação
+              de rotinas de treino eficientes e sustentáveis, sempre respeitando
+              sua individualidade para alcançar os melhores resultados.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicos" class="section-container dark-section">
+        <h2>O que está incluso no seu plano?</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <h4>Avaliação Completa</h4>
+            <p>
+              Análise postural e física detalhada para construir um plano de
+              treino 100% focado em você.
+            </p>
+          </div>
+          <div class="service-card">
+            <h4>Protocolo de Treino Exclusivo</h4>
+            <p>
+              Receba um treino periodizado e inteligente, que evolui junto com
+              você e quebra qualquer platô.
+            </p>
+          </div>
+          <div class="service-card">
+            <h4>Material de Apoio</h4>
+            <p>
+              Ganhe um Ebook de alongamentos específicos para otimizar sua
+              recuperação e flexibilidade.
+            </p>
+          </div>
+          <div class="service-card">
+            <h4>Aulas de 1h e 15min</h4>
+            <p>
+              Tempo de aula estendido para garantir aquecimento, treino e
+              desaquecimento de qualidade.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos" class="section-container">
+        <h2>Escolha o Plano Ideal para Você</h2>
+        <div class="plans-container">
+          <div class="plan-card featured">
+            <span class="featured-badge">Mais Popular</span>
+            <h3>Plano Mensal</h3>
+            <div class="plan-details">
+              <p><span>4x na semana:</span> <strong>R$500</strong></p>
+              <p><span>3x na semana:</span> <strong>R$420</strong></p>
+              <p><span>2x na semana:</span> <strong>R$300</strong></p>
+            </div>
+            <a
+              href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no plano mensal."
+              target="_blank"
+              class="cta-button"
+              >Quero Começar Agora</a
+            >
+          </div>
+          <div class="plan-card">
+            <h3>Plano Bimestral</h3>
+            <div class="plan-details">
+              <p>
+                <span>4x na semana:</span> <strong>R$900</strong>
+                <small>ou 2x R$480</small>
+              </p>
+              <p>
+                <span>3x na semana:</span> <strong>R$800</strong>
+                <small>ou 2x R$426</small>
+              </p>
+              <p>
+                <span>2x na semana:</span> <strong>R$550</strong>
+                <small>ou 2x R$293</small>
+              </p>
+            </div>
+            <a
+              href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no plano bimestral."
+              target="_blank"
+              class="cta-button secondary-cta"
+              >Escolher Plano</a
+            >
+          </div>
+          <div class="plan-card">
+            <h3>Plano Trimestral</h3>
+            <div class="plan-details">
+              <p>
+                <span>4x na semana:</span> <strong>R$1200</strong>
+                <small>ou 3x R$431</small>
+              </p>
+              <p>
+                <span>3x na semana:</span> <strong>R$1050</strong>
+                <small>ou 3x R$377</small>
+              </p>
+              <p>
+                <span>2x na semana:</span> <strong>R$800</strong>
+                <small>ou 3x R$287</small>
+              </p>
+            </div>
+            <a
+              href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no plano trimestral."
+              target="_blank"
+              class="cta-button secondary-cta"
+              >Escolher Plano</a
+            >
+          </div>
+        </div>
+        <p class="disclaimer">
+          *Valores no crédito já com taxa adicional, à vista os valores possuem
+          descontos.
+        </p>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="logo">Caleb.fit</div>
+      <p>Professor Rafael Caleb © 2025 - Todos os direitos reservados.</p>
+      <p>Contato: (35) 99906-4639</p>
+    </footer>
+
+    <!-- ÍCONE FLUTUANTE DO WHATSAPP COM IMAGEM -->
+    <a
+      href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Gostaria de saber mais sobre os planos."
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <img src="./assets/whats.png" alt="Contato via WhatsApp" />
+    </a>
+  </body>
+</html>
