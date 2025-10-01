@@ -217,13 +217,13 @@ nav {
   margin-bottom: 10px;
 }
 
-/* ---- SEÇÃO PLANOS ---- */
 .plans-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
   max-width: 1200px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .plan-card {
@@ -231,7 +231,6 @@ nav {
   border: 2px solid var(--border-color);
   border-radius: 12px;
   padding: 25px;
-  position: relative;
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -377,6 +376,7 @@ nav {
 
   .plans-container {
     flex-direction: row;
+
     align-items: flex-start;
   }
   .plan-card.featured {
@@ -403,5 +403,7 @@ nav {
 
   .plans-container {
     gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
