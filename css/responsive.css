@@ -1,0 +1,92 @@
+/* RESPONSIVE.CSS
+  - Todas as @media queries para 
+    tablets e desktops.
+*/
+
+/* ---- MEDIA QUERIES PARA TABLET E DESKTOP ---- */
+
+/* A partir de 768px (tablets e telas pequenas) */
+@media (min-width: 768px) {
+  .section-container {
+    padding: 60px 30px;
+  }
+  .section-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  .dark-section .subtitle {
+    color: var(--text-light);
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text h1 {
+    padding-inline: 8rem;
+    font-size: 2.8em;
+  }
+  .hero-text p {
+    font-size: 1.2em;
+  }
+
+  .hero .image-placeholder-container img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .coach-bio {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+  }
+  .coach-image-placeholder {
+    margin: 0;
+    flex-shrink: 0;
+  }
+  .coach-text {
+    flex: 1;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .plans-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .plan-card.featured {
+    transform: scale(1.05);
+  }
+  .plan-card.featured:hover {
+    transform: scale(1.1) translateY(-8px);
+  }
+}
+
+/* A partir de 1024px (desktops maiores) */
+@media (min-width: 1024px) {
+  .section-container {
+    padding: 80px 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 3.2em;
+  }
+  .hero .image-placeholder-container img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .plans-container {
+    gap: 30px;
+  }
+}

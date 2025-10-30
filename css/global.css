@@ -1,0 +1,49 @@
+:root {
+  --primary-color: #a946f5;
+  --primary-darker: #8a2be2;
+  --golden: #f5d146;
+  --light-bg: #f9f4ff;
+  --dark-bg: #1a0c29;
+  --text-light: #ffffff;
+  --text-dark: #333;
+  --card-bg: #ffffff;
+  --border-color: #e0c6ff;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  --whatsapp-green: #25d366;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.section-container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-container h2 {
+  font-size: 2em;
+  font-weight: 900;
+  color: var(--primary-darker);
+  margin-bottom: 20px;
+}
+
+.dark-section {
+  background-color: var(--dark-bg);
+}
+
+.dark-section h2 {
+  color: var(--text-light);
+}
+
+.dark-section .subtitle {
+  color: var(--text-light);
+}

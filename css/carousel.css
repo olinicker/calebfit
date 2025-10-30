@@ -1,0 +1,117 @@
+.carousel-container {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.carousel-nav {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+  width: 100%;
+  overflow: visible;
+}
+
+.carousel-item {
+  flex: 0 0 260px;
+
+  transform: scale(0.8);
+  opacity: 0.6;
+
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-item:nth-child(2) {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 10;
+}
+
+.carousel-item:hover {
+  transform: scale(0.85);
+  opacity: 1;
+  z-index: 20;
+}
+
+.carousel-item:nth-child(2):hover {
+  transform: scale(1.15);
+  z-index: 20;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid white;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 650px) {
+  .carousel-container {
+    position: relative;
+  }
+
+  .carousel-nav {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 30;
+    background-color: rgba(145, 67, 205, 0.76);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .carousel-nav:active {
+    background-color: rgb(163, 77, 230); /* Mais claro / opaco */
+  }
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
+
+  .carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel-item,
+  .carousel-item:nth-child(2) {
+    flex: 0 0 100%;
+
+    transform: none;
+    opacity: 1;
+    z-index: 1;
+
+    scroll-snap-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .carousel-item:hover,
+  .carousel-item:nth-child(2):hover {
+    transform: none;
+    z-index: auto;
+  }
+}

@@ -1,0 +1,103 @@
+/* COMPONENTS.CSS
+  - Estilos para elementos reutilizáveis:
+  - Animação de Pulse (WhatsApp)
+  - Botões (CTAs)
+  - Botão flutuante (WhatsApp)
+*/
+
+/* ---- ANIMAÇÃO DO BOTÃO WHATSAPP ---- */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* ---- BOTÕES (CTAs) ---- */
+.cta-button {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+.primary-cta {
+  background-color: var(--text-light);
+  color: var(--primary-darker);
+  font-size: 1.2em;
+  transform: scale(1);
+}
+
+.primary-cta:hover {
+  background-color: var(--light-bg);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-cta {
+  background-color: transparent;
+  border: 2px solid var(--text-light);
+  color: var(--text-light);
+  padding: 8px 20px;
+  box-shadow: none;
+}
+
+.nav-cta:hover {
+  background-color: var(--text-light);
+  color: var(--primary-darker);
+}
+
+.secondary-cta {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: none;
+}
+
+.secondary-cta:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  box-shadow: 0 2px 10px rgba(169, 70, 245, 0.4);
+}
+
+/* ---- BOTÃO FLUTUANTE WHATSAPP ---- */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--whatsapp-green);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+/* ESTILO ATUALIZADO PARA A IMAGEM */
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
