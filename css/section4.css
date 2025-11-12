@@ -1,0 +1,92 @@
+/* ARQUIVO CSS PARA A SEÇÃO 'CTA'
+  Salve este arquivo como 'cta.css' e adicione o link no <head> do seu HTML.
+*/
+
+/* Wrapper principal da seção com o fundo escuro */
+.cta-wrapper {
+  background: url("../assets/darksection.png");
+  color: #e0e0e0;
+  font-family: "Montserrat", sans-serif;
+  padding: 6rem 0;
+}
+
+/* Container interno para limitar a largura e adicionar preenchimento */
+.cta-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Título principal da seção */
+.cta-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulo abaixo do título principal */
+.cta-subtitulo {
+  font-size: 1.1rem;
+  color: #c0c0d0;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  /* Limita a largura do parágrafo */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Botão principal (Verde WhatsApp) */
+.cta-botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem; /* Espaço entre o ícone e o texto */
+  padding: 1rem 2.5rem; /* Preenchimento generoso */
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  /* Cor verde do WhatsApp */
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+.cta-botao:hover {
+  background-color: #1eae56; /* Um verde mais escuro no hover */
+  transform: scale(1.05); /* Efeito de zoom sutil */
+}
+
+/* --- RESPONSIVIDADE --- */
+
+/* Para tablets e telas menores */
+@media (max-width: 768px) {
+  .cta-wrapper {
+    padding: 4rem 0;
+  }
+
+  .cta-container {
+    padding: 1.5rem;
+  }
+
+  .cta-titulo {
+    font-size: 2rem;
+  }
+
+  .cta-subtitulo {
+    font-size: 1rem;
+  }
+
+  .cta-botao {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+  }
+}

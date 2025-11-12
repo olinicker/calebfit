@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/section1.css" />
+    <link rel="stylesheet" href="css/section2.css" />
+    <link rel="stylesheet" href="css/section3.css" />
+    <link rel="stylesheet" href="css/section4.css" />
   </head>
   <body>
     <header class="hero">
@@ -22,89 +26,94 @@
         <div class="logo">Caleb.fit</div>
         <a href="#planos" class="cta-button nav-cta">Ver Planos</a>
       </nav>
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>Sua melhor versão começa com o treino certo.</h1>
-          <p>
-            Consultoria Online com Rafael Caleb. Acompanhamento real, baseado em
-            ciência e na vivência de um atleta.
-          </p>
-          <!-- LINK DO WHATSAPP ATUALIZADO -->
-          <a
-            href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Gostaria de agendar uma aula experimental."
-            target="_blank"
-            class="cta-button primary-cta"
-            >Quero Começar Agora</a
-          >
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Sua melhor versão começa com o treino certo.</h1>
+            <p>
+              Consultoria Online com Caleb. Acompanhamento real, baseado em
+              ciência e na vivência de um atleta.
+            </p>
+            <!-- LINK DO WHATSAPP ATUALIZADO -->
+            <a
+              href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Gostaria de agendar uma aula experimental."
+              target="_blank"
+              class="cta-button primary-cta"
+              >Quero Começar Agora</a
+            >
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="apresentacao" class="section-container">
-        <h2>Conheça seu Treinador</h2>
-        <div class="coach-bio">
-          <div class="coach-image-placeholder">
-            <img
-              src="./assets/profile4.jpeg"
-              alt="Close-up do Professor Rafael Caleb"
-            />
-          </div>
-          <div class="coach-text">
-            <h3>Caleb</h3>
-            <p>
-              Sou graduando em Educação Física e atuante na área desde 2023,
-              acumulando experiências práticas por meio de estágios, cursos e
-              vivências com foco em <strong>musculação</strong> e
-              <strong>treinamento resistido</strong>.
-            </p>
-
-            <p>
-              Além de treinador, sou também
-              <strong>atleta de fisiculturismo natural</strong> e em breve
-              estarei estreando nos palcos pela primeira vez. Essa jornada
-              representa mais do que um objetivo pessoal: é a prova de que
-              <strong>disciplina</strong>, método e constância transformam não
-              apenas o corpo, mas também a mente.
-            </p>
-
-            <p>
-              Baseio meu trabalho em <strong>evidências científicas</strong>,
-              unindo teoria e prática de forma inteligente para oferecer um
-              acompanhamento seguro, eficiente e motivador.
-            </p>
-
-            <a
-              href="https://www.instagram.com/caleb_.fit/"
-              target="_blank"
-              class="cta-button secondary-cta"
-              style="
-                max-width: 22rem;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-              "
-              >Conheça meu trabalho no Instagram
+      <section id="apresentacao" class="section-container section-darker">
+        <div class="coach">
+          <h2 class="fade-in-section">Conheça seu Treinador</h2>
+          <div class="coach-bio">
+            <div class="coach-image-placeholder">
               <img
-                style="border-radius: 8px"
-                width="32px"
-                height="32px"
-                src="./assets/insta.png"
-                alt=""
-            /></a>
+                class="fade-in-section"
+                src="./assets/profile4.jpeg"
+                alt="Close-up do Professor Rafael Caleb"
+              />
+            </div>
+            <div class="coach-text fade-in-section">
+              <h3>Prazer, sou o Caleb 👋🏻</h3>
+              <p>
+                Sou graduando em Educação Física e atuante na área desde 2023,
+                acumulando experiências práticas por meio de estágios, cursos e
+                vivências com foco em
+                <strong> musculação e treinamento resistido.</strong>
+              </p>
+              <br />
+              <p>
+                Além de treinador, sou também
+                <strong>atleta de fisiculturismo natural</strong> e em breve
+                estarei estreando nos palcos pela primeira vez. Essa jornada é a
+                prova de que
+                <strong>disciplina, método e constância</strong> transformam não
+                apenas o corpo, mas também a mente.
+              </p>
+              <br />
+              <p>
+                Minha abordagem vai muito além das séries e repetições. Baseio
+                meu trabalho em <strong>evidências científicas</strong>, unindo
+                teoria e prática de forma inteligente para oferecer um
+                acompanhamento seguro, eficiente e motivador.
+              </p>
+              <a
+                href="https://www.instagram.com/caleb_.fit/"
+                target="_blank"
+                class="cta-button secondary-cta"
+                style="
+                  max-width: 22rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                "
+                >Conheça meu trabalho no Instagram
+                <img
+                  style="border-radius: 8px"
+                  width="32px"
+                  height="32px"
+                  src="./assets/insta.png"
+                  alt=""
+              /></a>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="servicos" class="section-container dark-section">
-        <h2>Minha Jornada como Atleta</h2>
-        <p class="subtitle">
+        <h2 class="fade-in-section">Minha Jornada como Atleta</h2>
+        <p class="subtitle fade-in-section">
           Você poderá acompanhar cada etapa comigo, aprendendo na prática como é
           <br />
           viver o processo de evolução de um atleta natural.
         </p>
 
-        <div class="carousel-container">
+        <div class="carousel-container fade-in-section">
           <button class="carousel-nav" id="prevBtn" aria-label="Anterior">
             &lt;
           </button>
@@ -134,114 +143,354 @@
             &gt;
           </button>
         </div>
-        <!-- <div class="services-grid">
-        
-          <div class="service-card">
-            <h4>Avaliação Completa</h4>
-            <p>
-              Análise postural e física detalhada para construir um plano de
-              treino 100% focado em você.
-            </p>
-          </div>
-          <div class="service-card">
-            <h4>Protocolo de Treino Exclusivo</h4>
-            <p>
-              Receba um treino periodizado e inteligente, que evolui junto com
-              você e quebra qualquer platô.
-            </p>
-          </div>
-          <div class="service-card">
-            <h4>Material de Apoio</h4>
-            <p>
-              Ganhe um Ebook de alongamentos específicos para otimizar sua
-              recuperação e flexibilidade.
-            </p>
-          </div>
-          <div class="service-card">
-            <h4>Aulas de 1h e 15min</h4>
-            <p>
-              Tempo de aula estendido para garantir aquecimento, treino e
-              desaquecimento de qualidade.
-            </p>
-          </div>
-        </div> -->
       </section>
+      <!-- 
+  COLE ESTE BLOCO NO SEU HTML PRINCIPAL.
+  NÃO ESQUEÇA DE ADICIONAR O LINK PARA O CSS NO <HEAD> DO SEU ARQUIVO:
+  <link rel="stylesheet" href="pilares.css" />
+-->
+      <div class="pilares-wrapper">
+        <section id="pilares" class="pilares-container">
+          <!-- Título Principal da Seção -->
+          <h2 class="pilares-titulo">
+            Inteligência, Prática e Acompanhamento Real
+          </h2>
+          <!-- Subtítulo da Seção -->
+          <p class="pilares-subtitulo">
+            Entenda os 3 pilares do Método Caleb Fit
+          </p>
 
-      <!-- <section id="planos" class="section-container">
-        <h2>Escolha o Plano Ideal para Você</h2>
-        <div class="plans-container">
-          <div class="plan-card featured">
-            <span class="featured-badge">Mais Popular</span>
-            <h3>Plano Mensal</h3>
-            <div class="plan-details">
-              <p><span>4x na semana:</span> <strong>R$500</strong></p>
-              <p><span>3x na semana:</span> <strong>R$420</strong></p>
-              <p><span>2x na semana:</span> <strong>R$300</strong></p>
-            </div>
-            <a
-              href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no plano mensal."
-              target="_blank"
-              class="cta-button"
-              >Quero Começar Agora</a
-            >
-          </div>
-          <div class="plan-card">
-            <h3>Plano Bimestral</h3>
-            <div class="plan-details">
+          <!-- Grid com os 3 Cards -->
+          <div class="pilares-grid">
+            <!-- Card 1: Planejamento -->
+            <div class="pilar-card">
+              <div class="pilar-icon icon-planejamento">
+                <!-- SVG Icon: Puzzle -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.47 1.62a.75.75 0 011.06 0l3 3A.75.75 0 0115 5.25h-1.875c.398.522.768 1.08.995 1.684l.01.025c.017.05.032.1.046.149.03.099.057.199.08.3a.75.75 0 01-1.414.494A3.75 3.75 0 0012 7.5c-1.017 0-1.944.39-2.625 1.031-.68-.64-1.608-1.03-2.625-1.03-2.071 0-3.75 1.679-3.75 3.75s1.679 3.75 3.75 3.75c.703 0 1.354-.194 1.92-.518.126.24.26.474.402.698a.75.75 0 01-1.217.848c-.207-.298-.406-.61-.59-.93C3.91 14.992 3 16.36 3 18c0 2.071 1.679 3.75 3.75 3.75S10.5 20.071 10.5 18c0-1.55-.93-2.853-2.188-3.488A3.75 3.75 0 0012 11.25c1.017 0 1.944-.39 2.625-1.03.68.64 1.608 1.03 2.625 1.03 2.071 0 3.75-1.679 3.75-3.75s-1.679-3.75-3.75-3.75c-.703 0-1.354.194-1.92.518-.126-.24-.26-.474-.402-.698a.75.75 0 011.217-.848c.207.298.406.61.59.93C20.09 5.008 21 3.64 21 2.25 21 .179 19.321-1.25 17.25-1.25s-3.75 1.679-3.75 3.75v.516c-.227-.603-.597-1.162-.995-1.684L12 1.93l-.47.38c-.4.32-.76.707-1.082 1.156a.75.75 0 01-1.3-.75v-.001c.014-.05.03-.1.046-.149.023-.102.05-.202.08-.3L9.375 2.25H7.5a.75.75 0 01-.53-1.28l3-3zM9 18c0 1.243-.997 2.25-2.25 2.25S4.5 19.243 4.5 18c0-1.243.997-2.25 2.25-2.25S9 16.757 9 18z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3>Planejamento e Orientação</h3>
               <p>
-                <span>4x na semana:</span> <strong>R$900</strong>
-                <small>ou 2x R$480</small>
-              </p>
-              <p>
-                <span>3x na semana:</span> <strong>R$800</strong>
-                <small>ou 2x R$426</small>
-              </p>
-              <p>
-                <span>2x na semana:</span> <strong>R$550</strong>
-                <small>ou 2x R$293</small>
+                Elaboro um programa de treino 100% personalizado, ajustado à sua
+                rotina, nível e estrutura. Inclui variações, progressões e
+                vídeos explicativos no app, além de orientações alimentares
+                práticas.
               </p>
             </div>
-            <a
-              href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no plano bimestral."
-              target="_blank"
-              class="cta-button secondary-cta"
-              >Escolher Plano</a
-            >
-          </div>
-          <div class="plan-card">
-            <h3>Plano Trimestral</h3>
-            <div class="plan-details">
+
+            <!-- Card 2: Acompanhamento -->
+            <div class="pilar-card">
+              <div class="pilar-icon icon-acompanhamento">
+                <!-- SVG Icon: Arrows Circle -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.755 10.059a7.5 7.5 0 0112.548-3.364l1.903 1.903h-3.183a.75.75 0 100 1.5h4.5a.75.75 0 00.75-.75v-4.5a.75.75 0 00-1.5 0v3.183l-1.903-1.903A9 9 0 003.18 10.97a8.96 8.96 0 00-.23 3.622.75.75 0 001.496.214A7.483 7.483 0 014.755 10.059zM19.245 13.941a7.5 7.5 0 01-12.548 3.364l-1.903-1.903h3.183a.75.75 0 100-1.5h-4.5a.75.75 0 00-.75.75v4.5a.75.75 0 101.5 0v-3.183l1.903 1.903A9 9 0 0020.82 13.03a8.96 8.96 0 00.23-3.622.75.75 0 00-1.496-.214A7.483 7.483 0 0119.245 13.941z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3>Acompanhamento e Ajustes</h3>
               <p>
-                <span>4x na semana:</span> <strong>R$1200</strong>
-                <small>ou 3x R$431</small>
-              </p>
-              <p>
-                <span>3x na semana:</span> <strong>R$1050</strong>
-                <small>ou 3x R$377</small>
-              </p>
-              <p>
-                <span>2x na semana:</span> <strong>R$800</strong>
-                <small>ou 3x R$287</small>
+                Você não estará sozinho. Realizamos check-ins semanais para
+                revisar o progresso e ajustar o plano. O suporte é direto e
+                contínuo via WhatsApp para manter você motivado e evoluindo com
+                segurança.
               </p>
             </div>
-            <a
-              href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no plano trimestral."
-              target="_blank"
-              class="cta-button secondary-cta"
-              >Escolher Plano</a
-            >
+
+            <!-- Card 3: Prática -->
+            <div class="pilar-card">
+              <div class="pilar-icon icon-pratica">
+                <!-- SVG Icon: Cog/Gear -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="48px"
+                  height="48px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.077 2.093l-.427.183A.5.5 0 0110.22 2.5l-.3 1.12a1 1 0 00.228 1.05c.162.181.398.3 1.02.434l1.13.235a.5.5 0 01.376.62l-.28 1.123a1 1 0 00.258 1.033c.162.181.398.3 1.02.434l1.13.235a.5.5 0 01.376.62l-.28 1.123a1 1 0 00.258 1.033c.162.181.398.3 1.02.434l1.13.235a.5.5 0 01.376.62l-.28 1.123a1 1 0 00.258 1.033c.162.181.398.3 1.02.434l1.13.235a.5.5 0 01.376.62l-.28 1.123a1 1 0 00.258 1.033c.162.181.398.3 1.02.434l1.13.235a.5.5 0 01.376.62l-.427.183a.5.5 0 01-.62-.376l-.3-1.12a1 1 0 00-1.05-.228c-.181.162-.3.398-.434 1.02l-.235 1.13a.5.5 0 01-.62.376l-1.123-.28a1 1 0 00-1.033.258c-.181.162-.3.398-.434 1.02l-.235 1.13a.5.5 0 01-.62.376l-1.123-.28a1 1 0 00-1.033.258c-.181.162-.3.398-.434 1.02l-.235 1.13a.5.5 0 01-.62.376l-1.123-.28a1 1 0 00-1.033.258c-.181.162-.3.398-.434 1.02l-.235 1.13a.5.5 0 01-.62.376l-1.123-.28a1 1 0 00-1.033.258c-.181.162-.3.398-.434 1.02l-.235 1.13a.5.5 0 01-.62.376l-.427-.183a.5.5 0 01.376-.62l1.13-.235c.622-.134.858-.37.99-.548a1 1 0 00.258-1.033l-.28-1.123a.5.5 0 01.376-.62l1.13-.235c.622-.134.858-.37.99-.548a1 1 0 00.258-1.033l-.28-1.123a.5.5 0 01.376-.62l1.13-.235c.622-.134.858-.37.99-.548a1 1 0 00.258-1.033l-.28-1.123a.5.5 0 01.376-.62l1.13-.235c.622-.134.858-.37.99-.548a1 1 0 00.258-1.033l-.28-1.123a.5.5 0 01.376-.62l.183-.427a.5.5 0 01.62.376l.235 1.13c.134.622.37.858.548.99a1 1 0 001.033.258l1.123-.28a.5.5 0 01.62.376l.235 1.13c.134.622.37.858.548.99a1 1 0 001.033.258l1.123-.28a.5.5 0 01.62.376l.235 1.13c.134.622.37.858.548.99a1 1 0 001.033.258l1.123-.28a.5.5 0 01.62.376l.235 1.13c.134.622.37.858.548.99a1 1 0 001.033.258l1.123-.28a.5.5 0 01.62.376l.427.183a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-1.02.434a1 1 0 00-.228 1.05l.3 1.12a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-1.02.434a1 1 0 00-.228 1.05l.3 1.12a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-1.02.434a1 1 0 00-.228 1.05l.3 1.12a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-1.02.434a1 1 0 00-.228 1.05l.3 1.12a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-1.02.434a1 1 0 00-.228 1.05l.3 1.12a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-.99.548a1 1 0 00-.258 1.033l.28 1.123a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-.99.548a1 1 0 00-.258 1.033l.28 1.123a.5.5 0 01-.376.62l-1.13.235c-.622.134-.858.37-.99.548a1 1 0 00-.258 1.033l.28 1.123a.5.5 0 01-.376.62l-.183.427a.5.5 0 01-.62-.376l-.235-1.13a1 1 0 00-1.033-.258c-.181-.162-.3-.398-.434-1.02l-.235-1.13a.5.5 0 01.376-.62l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.376-.62l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.376-.62l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.376-.62l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.376-.62l.427-.183a.5.5 0 01.376.62l-.235 1.13c-.134.622-.37.858-.548.99a1 1 0 00-1.033.258l-1.123-.28a.5.5 0 01-.62.376l-.235 1.13c-.134.622-.37.858-.548.99a1 1 0 00-1.033.258l-1.123-.28a.5.5 0 01-.62.376l-.235 1.13c-.134.622-.37.858-.548.99a1 1 0 00-1.033.258l-1.123-.28a.5.5 0 01-.62.376l-.235 1.13c-.134.622-.37.858-.548.99a1 1 0 00-1.033.258l-1.123-.28a.5.5 0 01-.62.376l-.235 1.13c-.134.622-.37.858-.548.99a1 1 0 00-1.033.258l-1.123-.28a.5.5 0 01-.62.376l-.427-.183a.5.5 0 01.62.376l.3 1.12a1 1 0 001.05.228c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.62-.376l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.62-.376l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.62-.376l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.62-.376l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.62-.376l1.123.28a.5.5 0 01.376-.62l.28-1.123a1 1 0 00-.258-1.033c-.162-.181-.398-.3-1.02-.434l-1.13-.235a.5.5 0 01-.376-.62l.28-1.123a1 1 0 00-.258-1.033c-.162-.181-.398-.3-1.02-.434l-1.13-.235a.5.5 0 01-.376-.62l.28-1.123a1 1 0 00-.258-1.033c-.162-.181-.398-.3-1.02-.434l-1.13-.235a.5.5 0 01-.376-.62l.28-1.123a1 1 0 00-.258-1.033c-.162-.181-.398-.3-1.02-.434l-1.13-.235a.5.5 0 01-.376-.62l.427-.183a.5.5 0 01.62.376l.3 1.12a1 1 0 001.05.228c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.62-.376l1.123.28a1 1 0 001.033-.258c.181-.162.3-.398.434-1.02l.235-1.13a.5.5 0 01.62-.376z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <h3>Como Funciona na Prática</h3>
+              <p>
+                A consultoria é adaptada à sua rotina. Você terá análises
+                técnicas dos treinos, correções posturais e comunicação
+                constante para que cada sessão seja produtiva, segura e
+                eficiente.
+              </p>
+            </div>
           </div>
-        </div>
-        <p class="disclaimer">
-          *Valores no crédito já com taxa adicional, à vista os valores possuem
-          descontos.
-        </p>
-      </section> -->
-      -
-      <br />
-      Próximas sessões aqui
-      <br />
-      -
+        </section>
+      </div>
+      <!-- 
+  COLE ESTE BLOCO NO SEU HTML PRINCIPAL.
+  NÃO ESQUEÇA DE ADICIONAR O LINK PARA O CSS NO <HEAD> DO SEU ARQUIVO:
+  <link rel="stylesheet" href="consultoria.css" />
+-->
+      <div class="consultoria-wrapper">
+        <section id="consultoria" class="consultoria-container">
+          <!-- Container do grid de 2 colunas -->
+          <div class="consultoria-grid">
+            <!-- Coluna da Esquerda: Texto -->
+            <div class="consultoria-texto">
+              <h2 class="consultoria-titulo-premium">
+                Consultoria Online Premium
+              </h2>
+              <h3 class="consultoria-titulo-metodo">Método Caleb Fit 💪</h3>
+
+              <p class="consultoria-descricao">
+                Com o Método Caleb Fit, você tem acesso a um acompanhamento
+                completo e inteligente, desenhado para quem busca evoluir com
+                propósito e consistência.
+              </p>
+
+              <h4 class="consultoria-lista-titulo">O que está incluso:</h4>
+
+              <ul class="consultoria-lista">
+                <li>
+                  <span class="icon-check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Treino completo dentro do aplicativo 📲</span>
+                </li>
+                <li>
+                  <span class="icon-check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Vídeos de execução e alongamentos 📽️</span>
+                </li>
+                <li>
+                  <span class="icon-check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Reavaliação física por foto a cada 7 dias 📸</span>
+                </li>
+                <li>
+                  <span class="icon-check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Suporte online 24h via WhatsApp 💬</span>
+                </li>
+                <li>
+                  <span class="icon-check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Avaliação postural 🧍‍♂️</span>
+                </li>
+                <li>
+                  <span class="icon-check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Ebook de alongamentos 📕</span>
+                </li>
+                <li>
+                  <span class="icon-check">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      width="14"
+                      height="14"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </span>
+                  <span>Carta explicativa dos métodos de treino 📝</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="consultoria-imagem-wrapper">
+              <div class="consultoria-app-placeholder">
+                <img src="./assets/app.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 
+  COLE ESTE BLOCO NO SEU HTML PRINCIPAL.
+  NÃO ESQUEÇA DE ADICIONAR O LINK PARA O CSS NO <HEAD> DO SEU ARQUIVO:
+  <link rel="stylesheet" href="planos.css" />
+-->
+      <div class="planos-wrapper">
+        <section id="planos" class="planos-container">
+          <h2 class="planos-titulo">Planos 💰</h2>
+          <p class="planos-subtitulo">
+            Escolha o plano que melhor se adapta à sua jornada.
+          </p>
+
+          <!-- Grid com os cards de planos -->
+          <div class="planos-grid">
+            <!-- Card 1: Plano Bimestral -->
+            <div class="plano-card">
+              <h3>Plano Bimestral</h3>
+              <div class="plano-preco">R$300</div>
+              <p class="plano-detalhe">à vista</p>
+              <p class="plano-detalhe">ou 2x de R$165</p>
+
+              <!-- Link do WhatsApp para o Plano Bimestral -->
+              <a
+                href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no Plano Bimestral."
+                target="_blank"
+                class="plano-botao"
+                >Selecionar Plano</a
+              >
+            </div>
+
+            <!-- Card 2: Plano Trimestral (Destaque) -->
+            <div class="plano-card featured">
+              <h3>Plano Trimestral</h3>
+              <div class="plano-preco">R$420</div>
+              <p class="plano-detalhe">à vista</p>
+              <p class="plano-detalhe">ou 3x de R$140</p>
+
+              <!-- Link do WhatsApp para o Plano Trimestral -->
+              <a
+                href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Tenho interesse no Plano Trimestral."
+                target="_blank"
+                class="plano-botao"
+                >Selecionar Plano</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- 
+  COLE ESTE BLOCO NO SEU HTML PRINCIPAL.
+  NÃO ESQUEÇA DE ADICIONAR O LINK PARA O CSS NO <HEAD> DO SEU ARQUIVO:
+  <link rel="stylesheet" href="cta.css" />
+-->
+      <div class="cta-wrapper">
+        <section id="cta" class="cta-container">
+          <h2 class="cta-titulo">Pronto para começar sua transformação?</h2>
+          <p class="cta-subtitulo">
+            Clique no botão abaixo para falar diretamente comigo no WhatsApp e
+            tirar todas as suas dúvidas.
+          </p>
+
+          <!-- Botão de Ação para o WhatsApp -->
+          <a
+            href="https://api.whatsapp.com/send?phone=5535999064639&text=Olá! Estou pronto para começar minha transformação e gostaria de mais informações."
+            target="_blank"
+            class="cta-botao"
+          >
+            <!-- Ícone do WhatsApp (SVG) -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              fill="currentColor"
+            >
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.06 21.94L7.32 20.58C8.77 21.36 10.38 21.81 12.04 21.81C17.5 21.81 21.95 17.36 21.95 11.91C21.95 6.45 17.5 2 12.04 2M12.04 3.65C16.56 3.65 20.3 7.39 20.3 11.91C20.3 16.43 16.56 20.17 12.04 20.17C10.53 20.17 9.09 19.79 7.84 19.11L7.54 18.95L4.4 19.78L5.26 16.73L5.09 16.42C4.34 15.06 3.78 13.53 3.78 11.91C3.78 7.39 7.52 3.65 12.04 3.65M17.3 14.85C17.03 15.54 16.14 16.04 15.53 16.19C15.04 16.31 14.43 16.34 13.92 16.19C13.46 16.07 12.82 15.84 12.3 15.6C10.91 15.01 9.79 14.07 8.82 12.9C7.96 11.87 7.29 10.7 6.79 9.47C6.6 8.99 6.37 8.39 6.23 7.85C6.09 7.31 6.1 6.74 6.22 6.28C6.37 5.71 6.87 4.82 7.55 4.54C7.8 4.42 8.09 4.37 8.35 4.37C8.56 4.37 8.76 4.4 8.94 4.44C9.32 4.53 9.6 4.84 9.8 5.17C10 5.5 10.25 6.13 10.35 6.35C10.46 6.58 10.53 6.86 10.38 7.1C10.23 7.34 10.11 7.52 9.93 7.73C9.75 7.94 9.59 8.11 9.45 8.27C9.3 8.44 9.15 8.61 9.3 8.88C9.45 9.15 9.81 9.72 10.38 10.26C11.14 10.99 11.79 11.41 12.19 11.58C12.56 11.74 12.83 11.7 13.04 11.49C13.29 11.23 13.58 10.82 13.92 10.45C14.2 10.15 14.53 10.05 14.88 10.18C15.24 10.31 15.86 10.6 16.32 10.83C16.8 11.06 17.09 11.21 17.21 11.4C17.33 11.59 17.3 11.98 17.03 12.67L17.3 14.85Z"
+              />
+            </svg>
+            <span>Falar no WhatsApp</span>
+          </a>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
