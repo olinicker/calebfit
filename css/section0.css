@@ -28,5 +28,27 @@
 @media (max-width: 768px) {
   .coach-bio {
     flex-direction: column;
+
+    .coach-text {
+      .cta-button {
+        width: 250px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .coach-section {
+    margin: 0;
+  }
+  .coach-section h2 {
+    margin-bottom: 1rem;
+  }
+
+  .hero {
+    background-position: -670px center; /* 20px da esquerda */
+
+    .hero-container {
+      margin-top: 20rem;
+    }
   }
 }
