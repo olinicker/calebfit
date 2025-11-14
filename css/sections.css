@@ -276,7 +276,7 @@ nav {
 }
 
 .main-footer {
-  background-color: var(--dark-bg);
+  background-color: #0c0c14;
   color: var(--text-light);
   text-align: center;
   padding: 40px 20px;
