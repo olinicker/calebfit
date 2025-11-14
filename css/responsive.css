@@ -1,91 +1,76 @@
-/* RESPONSIVE.CSS
-  - Todas as @media queries para 
-    tablets e desktops.
-*/
+/* Adicione isto ao seu 'responsive.css' */
 
-/* ---- MEDIA QUERIES PARA TABLET E DESKTOP ---- */
+@media (max-width: 768px) {
+  /* --- Ajustes do Header (Hero) --- */
 
-/* A partir de 768px (tablets e telas pequenas) */
-@media (min-width: 768px) {
-  .section-container {
-    padding: 60px 30px;
-  }
-  .section-container h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+  .hero {
+    height: auto; /* Altura automática para caber o conteúdo */
+    min-height: 90vh; /* Garante uma boa altura inicial */
+    padding: 20px; /* Padding geral para o header no mobile */
+    justify-content: flex-start; /* Alinha nav no topo */
   }
 
-  .dark-section .subtitle {
-    color: var(--text-light);
+  nav {
+    margin-bottom: 4rem; /* Mais espaço entre nav e conteúdo */
+    padding: 0; /* O padding já está no .hero */
   }
 
-  .hero-content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+  .hero-container {
+    gap: 2rem; /* Reduz o gap */
+    margin-bottom: 4rem; /* Reduz margem inferior */
+    padding: 0; /* O padding já está no .hero */
+    justify-content: center; /* Centraliza o conteúdo */
   }
 
   .hero-text {
+    /* Centraliza o texto no mobile */
+    align-items: center;
     text-align: center;
-  }
-  .hero-text h1 {
-    font-size: 2.8em;
-  }
-  .hero-text p {
-    font-size: 1.2em;
+    padding-bottom: 2rem;
   }
 
-  .hero .image-placeholder-container img {
-    width: 250px;
-    height: 250px;
+  .hero-text h1 {
+    font-size: 1.8em; /* Reduz o H1 */
+  }
+
+  .hero-text p {
+    font-size: 1em; /* Reduz o parágrafo */
+    max-width: 100%; /* Garante que o texto use o espaço */
+  }
+
+  .primary-cta {
+    width: 90%; /* Faz o botão principal ser mais fácil de clicar */
+  }
+
+  /* --- Ajustes da Seção Coach (Apresentação) --- */
+
+  .coach-section h2 {
+    font-size: 1.6em; /* Reduz o título da seção */
   }
 
   .coach-bio {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 40px;
+    padding: 0 1rem; /* Padding lateral de 16px */
+    margin-block: 2rem; /* Reduz margem vertical */
   }
+
   .coach-image-placeholder {
-    margin: 0;
-    flex-shrink: 0;
+    padding-bottom: 2rem; /* Reduz espaço abaixo da foto */
   }
+
+  .coach-bio .coach-image-placeholder img {
+    /* Reduz a foto no mobile */
+    width: 200px;
+    height: 200px;
+  }
+
   .coach-text {
-    flex: 1;
+    text-align: center; /* Centraliza o texto da bio */
   }
 
-  .services-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  .plans-container {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .plan-card.featured {
-    transform: scale(1.05);
-  }
-  .plan-card.featured:hover {
-    transform: scale(1.1) translateY(-8px);
-  }
-}
-
-/* A partir de 1024px (desktops maiores) */
-@media (min-width: 1024px) {
-  .section-container {
-    padding: 80px 40px;
-  }
-
-  .hero-text h1 {
-    font-size: 3.2em;
-  }
-  .hero .image-placeholder-container img {
-    width: 300px;
-    height: 300px;
-  }
-
-  .plans-container {
-    gap: 30px;
+  .coach-text a {
+    /* Centraliza o botão do Instagram e dá uma largura boa */
+    margin: 2rem auto 3rem auto;
+    width: 90%;
+    max-width: 22rem; /* Mantém o max-width que você já tinha */
   }
 }

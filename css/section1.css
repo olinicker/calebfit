@@ -1,7 +1,7 @@
 .pilares-wrapper {
   background-color: #0c0c14;
   color: #e0e0e0;
-  font-family: "Montserrat", sans-serif;
+  padding: 8rem 0;
 }
 
 .pilares-container {
@@ -52,6 +52,10 @@
 
 .pilar-icon {
   margin-bottom: 1.5rem;
+
+  .emoji {
+    font-size: 2rem;
+  }
 }
 
 .pilar-icon.icon-planejamento svg {

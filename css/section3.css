@@ -1,16 +1,10 @@
-/* ARQUIVO CSS PARA A SEÇÃO 'PLANOS'
-  Salve este arquivo como 'planos.css' e adicione o link no <head> do seu HTML.
-*/
-
-/* Wrapper principal da seção com o fundo escuro */
 .planos-wrapper {
   background-color: #0c0c14;
   color: #e0e0e0;
-  font-family: "Montserrat", sans-serif;
-  padding: 6rem 0; /* Mais preenchimento para destacar a seção */
+
+  padding: 8rem 0;
 }
 
-/* Container interno para limitar a largura e adicionar preenchimento */
 .planos-container {
   max-width: 1280px;
   margin: 0 auto;
@@ -18,7 +12,6 @@
   text-align: center;
 }
 
-/* Título principal da seção */
 .planos-titulo {
   font-size: 2.5rem;
   font-weight: 700;
@@ -26,7 +19,6 @@
   margin-bottom: 1rem;
 }
 
-/* Subtítulo abaixo do título principal */
 .planos-subtitulo {
   font-size: 1.1rem;
   color: #c0c0d0;
@@ -34,17 +26,15 @@
   font-weight: 400;
 }
 
-/* Grid que alinha os cards */
 .planos-grid {
   display: grid;
-  /* Cria 2 colunas */
+
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  max-width: 900px; /* Limita a largura do grid */
-  margin: 0 auto; /* Centraliza o grid */
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-/* Estilização individual de cada card */
 .plano-card {
   background-color: #161625;
   padding: 2.5rem;
@@ -53,6 +43,8 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -61,13 +53,11 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo do card em destaque (Trimestral) */
 .plano-card.featured {
-  border-color: #a855f7; /* Borda roxa de destaque */
+  border-color: #a855f7;
   box-shadow: 0 8px 40px rgba(168, 85, 247, 0.15);
 }
 
-/* Título dentro do card (Plano Bimestral, etc.) */
 .plano-card h3 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -75,32 +65,60 @@
   margin-bottom: 1rem;
 }
 
-/* Preço (R$300) */
 .plano-preco {
   font-size: 3rem;
   font-weight: 700;
-  color: #c084fc; /* Roxo/magenta */
+  color: #c084fc;
   margin-bottom: 0.5rem;
   line-height: 1.1;
 }
 
-/* Detalhes do plano (à vista, etc.) */
 .plano-detalhe {
   font-size: 1rem;
   color: #c0c0d0;
   margin-bottom: 0.25rem;
 }
+.antes-preco-de {
+  font-size: 22px;
+  color: #c0c0d0;
+}
+.antes-preco {
+  font-size: 22px;
+}
 
-/* Último detalhe antes do botão */
 .plano-detalhe:last-of-type {
   margin-bottom: 2.5rem;
 }
 
-/* Botão "Selecionar Plano" */
+.plano-popular {
+  color: #a7a7a7;
+}
+
+.plano-riscado {
+  text-decoration: line-through;
+  text-decoration-color: #e53e3e;
+  text-decoration-thickness: 3px;
+  color: #e53e3e;
+  font-size: 32px;
+}
+
+.por {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.economiza {
+  color: green;
+}
+
+.preco {
+  padding-top: 1rem;
+}
+
 .plano-botao {
-  display: block;
   width: 100%;
-  padding: 1rem;
+  padding-block: 1rem;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
@@ -109,9 +127,8 @@
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-top: auto; /* Empurra o botão para o final do card */
+  margin-top: auto;
 
-  /* Estilo padrão (card não-destaque) */
   background-color: #3a3a5a;
   color: #e0e0e0;
 }
@@ -121,25 +138,59 @@
   transform: scale(1.02);
 }
 
-/* Estilo do botão no card em destaque */
 .plano-card.featured .plano-botao {
+  position: relative;
   background-color: #a855f7;
   color: #ffffff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  z-index: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.plano-card.featured .plano-botao::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 3px;
+  background: linear-gradient(
+    90deg,
+    #ff9d00,
+    #ff00e6,
+    #8f00ff,
+    #4ae1ff,
+    #ff9d00
+  );
+  background-size: 300% 100%;
+  animation: borderMove 4s linear infinite;
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  z-index: -1;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
 }
 
 .plano-card.featured .plano-botao:hover {
-  background-color: #9333ea; /* Roxo mais escuro no hover */
+  background-color: #9333ea;
 }
 
-/* --- RESPONSIVIDADE --- */
-
-/* Para tablets */
 @media (max-width: 768px) {
   .planos-grid {
-    /* Os cards ficam um abaixo do outro */
     grid-template-columns: 1fr;
     gap: 2rem;
-    max-width: 500px; /* Limita a largura no modo de 1 coluna */
+    max-width: 500px;
   }
 
   .planos-container {

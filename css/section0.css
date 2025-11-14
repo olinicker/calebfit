@@ -1,0 +1,32 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.coach-section {
+  display: flex;
+  flex-direction: column;
+  margin-block: 6rem;
+}
+
+.coach-section h2 {
+  margin-bottom: 6rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.coach-bio {
+  display: flex;
+  text-align: start;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .coach-bio {
+    flex-direction: column;
+  }
+}

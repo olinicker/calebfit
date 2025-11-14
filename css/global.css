@@ -5,6 +5,7 @@
   --light-bg: #f9f4ff;
   --dark-bg: #1a0c29;
   --text-light: #ffffff;
+  --text-subtitle: #dadada;
   --text-dark: #333;
   --card-bg: #ffffff;
   --border-color: #e0c6ff;
@@ -15,10 +16,10 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--light-bg);
@@ -59,5 +60,5 @@ body {
 }
 
 .dark-section .subtitle {
-  color: var(--text-light);
+  color: var(--text-subtitle);
 }

@@ -17,8 +17,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 1280px;
   margin: 0 auto 40px auto;
+
+  /* --- CORREÇÃO --- */
+  max-width: 1280px; /* ANTES: min-width: 1280px */
+  width: 100%; /* ADICIONADO: Para ser flexível */
+  box-sizing: border-box; /* ADICIONADO: Para padding funcionar bem */
 }
 
 .logo {
@@ -33,9 +37,14 @@ nav {
   align-items: center;
   margin: 0 auto 40px auto;
   gap: 12rem;
-  width: 1280px;
   margin-bottom: 19rem;
+
+  /* --- CORREÇÃO --- */
+  max-width: 1280px; /* ANTES: width: 1280px */
+  width: 100%; /* ADICIONADO: Para ser flexível */
+  box-sizing: border-box; /* ADICIONADO */
 }
+
 .hero-content {
   max-width: 800px;
   display: flex;
@@ -106,6 +115,12 @@ nav {
   margin-block: 5rem;
   max-width: 1280px;
   margin: 0 auto;
+
+  /* --- ADIÇÃO SUTIL --- */
+  /* Adicionado padding e box-sizing para o container não colar nas bordas */
+  /* em telas de tablet, antes do media query de 768px ser ativado. */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .coach-image-placeholder {
@@ -113,7 +128,9 @@ nav {
 }
 
 .coach-text {
-  width: 720px;
+  /* --- CORREÇÃO --- */
+  max-width: 720px; /* ANTES: width: 720px */
+  width: 100%; /* ADICIONADO: Para ser flexível */
 }
 
 .coach-text h3 {
@@ -135,7 +152,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  max-width: 1000px;
+  max-width: 1000px; /* max-width é ótimo, não precisa mudar */
   margin: 0 auto;
 }
 
@@ -155,7 +172,7 @@ nav {
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition: opacity 2s ease-out, transform 0.6s ease-out;
 }
 
 .fade-in-section.visible {
@@ -174,7 +191,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 1200px;
+  max-width: 1200px; /* max-width é ótimo, não precisa mudar */
   margin: 0 auto;
   justify-content: center;
 }
@@ -253,7 +270,7 @@ nav {
   font-size: 0.9em;
   color: #777;
   margin-top: 30px;
-  max-width: 800px;
+  max-width: 800px; /* max-width é ótimo, não precisa mudar */
   margin-left: auto;
   margin-right: auto;
 }
