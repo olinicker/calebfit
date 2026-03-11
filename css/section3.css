@@ -39,13 +39,16 @@
   background-color: #161625;
   padding: 2.5rem;
   border-radius: 12px;
-  border: 2px solid #4a4a6a;
+  border: 2px solid #4a6a5d;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .plano-card:hover {
@@ -54,7 +57,7 @@
 }
 
 .plano-card.featured {
-  border-color: #a855f7;
+  border-color: #55f7dc;
   box-shadow: 0 8px 40px rgba(168, 85, 247, 0.15);
 }
 
@@ -68,7 +71,7 @@
 .plano-preco {
   font-size: 3rem;
   font-weight: 700;
-  color: #c084fc;
+  color: #84eafc;
   margin-bottom: 0.5rem;
   line-height: 1.1;
 }
@@ -126,7 +129,9 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
   margin-top: auto;
 
   background-color: #3a3a5a;
@@ -166,7 +171,9 @@
   background-size: 300% 100%;
   animation: borderMove 4s linear infinite;
 
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 

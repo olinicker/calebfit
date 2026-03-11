@@ -1,3 +1,7 @@
+import * as prismic from "https://esm.sh/@prismicio/client";
+
+const repositoryName = "caleb-fit-landing";
+const client = prismic.createClient(repositoryName);
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector(".carousel");
   const prevBtn = document.getElementById("prevBtn");
@@ -80,3 +84,36 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 });
+
+const init = async () => {
+  try {
+    const response = await client.getSingle("home");
+    const post = response.data;
+
+    const heroData = {
+      title: prismic.asText(post.hero_title),
+      description: prismic.asHTML(post.hero_description),
+      buttonText: post.hero_button_text,
+    };
+
+    const heroTitleElement = document.querySelector(".hero-text h1");
+    const heroDescElement = document.querySelector(".hero-text p");
+    const heroButtonElement = document.querySelector(".hero-text a");
+
+    if (heroTitleElement) {
+      heroTitleElement.textContent = heroData.title;
+    }
+
+    if (heroButtonElement) {
+      heroButtonElement.textContent = heroData.buttonText;
+    }
+
+    if (heroDescElement) {
+      heroDescElement.innerHTML = heroData.description;
+    }
+  } catch (error) {
+    console.error("Erro ao buscar dados do Prismic:", error);
+  }
+};
+
+init();
