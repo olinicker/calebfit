@@ -1,76 +1,67 @@
-/* Adicione isto ao seu 'responsive.css' */
-
 @media (max-width: 768px) {
-  /* --- Ajustes do Header (Hero) --- */
-
   .hero {
-    height: auto; /* Altura automática para caber o conteúdo */
-    min-height: 90vh; /* Garante uma boa altura inicial */
-    padding: 20px; /* Padding geral para o header no mobile */
-    justify-content: flex-start; /* Alinha nav no topo */
+    height: auto;
+    min-height: 90vh;
+    padding: 20px;
+    justify-content: flex-start;
   }
 
   nav {
-    margin-bottom: 4rem; /* Mais espaço entre nav e conteúdo */
-    padding: 0; /* O padding já está no .hero */
+    margin-bottom: 4rem;
+    padding: 0;
   }
 
   .hero-container {
-    gap: 2rem; /* Reduz o gap */
-    margin-bottom: 4rem; /* Reduz margem inferior */
-    padding: 0; /* O padding já está no .hero */
-    justify-content: center; /* Centraliza o conteúdo */
+    gap: 2rem;
+    margin-bottom: 4rem;
+    padding: 0;
+    justify-content: center;
   }
 
   .hero-text {
-    /* Centraliza o texto no mobile */
     align-items: center;
     text-align: center;
     padding-bottom: 2rem;
   }
 
   .hero-text h1 {
-    font-size: 1.8em; /* Reduz o H1 */
+    font-size: 1.8em;
   }
 
   .hero-text p {
-    font-size: 1em; /* Reduz o parágrafo */
-    max-width: 100%; /* Garante que o texto use o espaço */
+    font-size: 1em;
+    max-width: 100%;
   }
 
   .primary-cta {
-    width: 90%; /* Faz o botão principal ser mais fácil de clicar */
+    width: 90%;
   }
 
-  /* --- Ajustes da Seção Coach (Apresentação) --- */
-
   .coach-section h2 {
-    font-size: 1.6em; /* Reduz o título da seção */
+    font-size: 1.6em;
   }
 
   .coach-bio {
-    padding: 0 1rem; /* Padding lateral de 16px */
-    margin-block: 2rem; /* Reduz margem vertical */
+    padding: 0 1rem;
+    margin-block: 2rem;
   }
 
   .coach-image-placeholder {
-    padding-bottom: 2rem; /* Reduz espaço abaixo da foto */
+    padding-bottom: 2rem;
   }
 
   .coach-bio .coach-image-placeholder img {
-    /* Reduz a foto no mobile */
     width: 200px;
     height: 200px;
   }
 
   .coach-text {
-    text-align: center; /* Centraliza o texto da bio */
+    text-align: center;
   }
 
   .coach-text a {
-    /* Centraliza o botão do Instagram e dá uma largura boa */
     margin: 2rem auto 3rem auto;
     width: 90%;
-    max-width: 22rem; /* Mantém o max-width que você já tinha */
+    max-width: 22rem;
   }
 }

@@ -1,5 +1,5 @@
 .cta-wrapper {
-  background: url("../assets/darksection.png");
+  background: url("../assets/darksection2.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: #e0e0e0;
@@ -46,7 +46,9 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 
   background-color: #25d366;
   color: #ffffff;

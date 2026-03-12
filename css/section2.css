@@ -1,5 +1,5 @@
 .consultoria-wrapper {
-  background-color: #2d073b;
+  background-color: #002024;
   color: #e0e0e0;
 
   padding: 6rem 0;
@@ -31,7 +31,7 @@
 .consultoria-titulo-premium {
   font-size: 2.2rem;
   font-weight: 700;
-  color: #c084fc;
+  color: #84eefc;
   margin-bottom: 0.5rem;
 }
 
@@ -79,14 +79,14 @@
   justify-content: center;
   width: 22px;
   height: 22px;
-  background-color: #a855f7;
+  background-color: #21cf11;
   border-radius: 50%;
   margin-right: 0.75rem;
   flex-shrink: 0;
 }
 
 .icon-check svg {
-  fill: #ffffff;
+  fill: #000000;
 }
 
 .consultoria-app-placeholder {
@@ -104,7 +104,7 @@
 .consultoria-app-placeholder span {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #c084fc;
+  color: #84f4fc;
 }
 
 @media (max-width: 992px) {

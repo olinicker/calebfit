@@ -1,5 +1,5 @@
 .pilares-wrapper {
-  background-color: #0c0c14;
+  background-color: #0a0a0a;
   color: #e0e0e0;
   padding: 8rem 0;
 }
@@ -38,16 +38,19 @@
   padding: 2.5rem 2rem;
   border-radius: 12px;
 
-  border: 1px solid #4a4a6a;
+  border: 1px solid #4a6a68;
 
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .pilar-card:hover {
   transform: translateY(-5px);
-  border-color: #7d5fff;
-  box-shadow: 0 8px 30px rgba(125, 95, 255, 0.15);
+  border-color: #5fffe4;
+  box-shadow: 0 8px 30px rgba(95, 255, 255, 0.15);
 }
 
 .pilar-icon {

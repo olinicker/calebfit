@@ -1,5 +1,5 @@
 .planos-wrapper {
-  background-color: #0c0c14;
+  background-color: #0a0a0a;
   color: #e0e0e0;
 
   padding: 8rem 0;
@@ -36,7 +36,7 @@
 }
 
 .plano-card {
-  background-color: #161625;
+  background-color: rgb(22, 37, 36);
   padding: 2.5rem;
   border-radius: 12px;
   border: 2px solid #4a6a5d;
@@ -58,7 +58,7 @@
 
 .plano-card.featured {
   border-color: #55f7dc;
-  box-shadow: 0 8px 40px rgba(168, 85, 247, 0.15);
+  box-shadow: 0 8px 40px rgba(85, 223, 247, 0.15);
 }
 
 .plano-card h3 {
@@ -134,18 +134,18 @@
     transform 0.3s ease;
   margin-top: auto;
 
-  background-color: #3a3a5a;
+  background-color: #3a5a5a;
   color: #e0e0e0;
 }
 
 .plano-botao:hover {
-  background-color: #4a4a6a;
+  background-color: #4a6a6a;
   transform: scale(1.02);
 }
 
 .plano-card.featured .plano-botao {
   position: relative;
-  background-color: #a855f7;
+  background-color: #009e9e;
   color: #ffffff;
   border-radius: 8px;
   padding: 12px 20px;
@@ -190,7 +190,7 @@
 }
 
 .plano-card.featured .plano-botao:hover {
-  background-color: #9333ea;
+  background-color: #33eaea;
 }
 
 @media (max-width: 768px) {

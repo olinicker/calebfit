@@ -88,17 +88,36 @@ document.addEventListener("DOMContentLoaded", () => {
 const init = async () => {
   try {
     const response = await client.getSingle("home");
-    const post = response.data;
+    const responseData = response.data;
 
     const heroData = {
-      title: prismic.asText(post.hero_title),
-      description: prismic.asHTML(post.hero_description),
-      buttonText: post.hero_button_text,
+      title: prismic.asText(responseData.hero_title),
+      description: prismic.asHTML(responseData.hero_description),
+      buttonText: responseData.hero_button_text,
+      heroTopRight: prismic.asText(responseData.hero_top_right),
+    };
+
+    const mainData = {
+      mainTitle: prismic.asText(responseData.main_title),
+      mainCoachText: prismic.asText(responseData.main_coach_text),
+      mainCoachRichText: prismic.asHTML(responseData.main_coach_rich_text),
+      mainIntagramText: responseData.instagram_text,
+      mainCoachImage: responseData.coach_image.url,
     };
 
     const heroTitleElement = document.querySelector(".hero-text h1");
     const heroDescElement = document.querySelector(".hero-text p");
     const heroButtonElement = document.querySelector(".hero-text a");
+    const heroTopRightElement = document.getElementById("consultoria");
+
+    const mainTitleElement = document.getElementById("main-title-element");
+    const mainCoachTextElement = document.getElementById("main-coach-text");
+    const mainCoachRichTextElement = document.getElementById(
+      "main-coach-rich-text",
+    );
+    const mainInstagramRotineElement =
+      document.getElementById("rotina-instagram");
+    const MaincoachImg = document.getElementById("coachImage");
 
     if (heroTitleElement) {
       heroTitleElement.textContent = heroData.title;
@@ -110,6 +129,30 @@ const init = async () => {
 
     if (heroDescElement) {
       heroDescElement.innerHTML = heroData.description;
+    }
+
+    if (mainTitleElement) {
+      mainTitleElement.textContent = mainData.mainTitle;
+    }
+
+    if (mainCoachTextElement) {
+      mainCoachTextElement.textContent = mainData.mainCoachText;
+    }
+
+    if (mainCoachRichTextElement) {
+      mainCoachRichTextElement.innerHTML = mainData.mainCoachRichText;
+    }
+
+    if (heroTopRightElement) {
+      heroTopRightElement.innerText = heroData.heroTopRight;
+    }
+
+    if (mainInstagramRotineElement) {
+      mainInstagramRotineElement.innerHTML += mainData.mainIntagramText;
+    }
+
+    if (MaincoachImg) {
+      MaincoachImg.src = mainData.mainCoachImage;
     }
   } catch (error) {
     console.error("Erro ao buscar dados do Prismic:", error);
